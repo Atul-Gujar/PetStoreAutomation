@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 10.93 s <<< FAILURE! -- in TestSuite
-api.test.UserTests.testPostUser -- Time elapsed: 3.443 s <<< FAILURE!
+Tests run: 6, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 8.434 s <<< FAILURE! -- in TestSuite
+api.test.UserTests.testPostUser -- Time elapsed: 2.663 s <<< FAILURE!
 java.lang.AssertionError: expected [200] but found [500]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
@@ -43,7 +43,7 @@ java.lang.AssertionError: expected [200] but found [500]
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-api.test.UserTests.testGetUserByName -- Time elapsed: 2.327 s <<< FAILURE!
+api.test.UserTests.testGetUserByName -- Time elapsed: 1.527 s <<< FAILURE!
 java.lang.AssertionError: expected [200] but found [500]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
@@ -84,7 +84,7 @@ java.lang.AssertionError: expected [200] but found [500]
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-api.test.UserTests.testUpdateUser -- Time elapsed: 1.610 s <<< FAILURE!
+api.test.UserTests.testUpdateUser -- Time elapsed: 1.592 s <<< FAILURE!
 java.lang.AssertionError: expected [200] but found [500]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
@@ -125,7 +125,7 @@ java.lang.AssertionError: expected [200] but found [500]
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-api.test.UserTests.testDeleteUser -- Time elapsed: 1.733 s <<< FAILURE!
+api.test.UserTests.testDeleteUser -- Time elapsed: 1.633 s <<< FAILURE!
 java.lang.AssertionError: expected [204] but found [500]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
@@ -166,7 +166,7 @@ java.lang.AssertionError: expected [204] but found [500]
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-api.test.DataDrivenTest.testPostUser -- Time elapsed: 1.910 s <<< FAILURE!
+api.test.DataDrivenTest.testPostUser -- Time elapsed: 1.932 s <<< FAILURE!
 java.lang.RuntimeException: java.lang.NoSuchMethodError: 'org.apache.logging.log4j.LogBuilder org.apache.logging.log4j.Logger.atDebug()'
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:58)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:159)
@@ -218,7 +218,7 @@ Caused by: java.lang.NoSuchMethodError: 'org.apache.logging.log4j.LogBuilder org
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:54)
 	... 29 more
 
-api.test.DataDrivenTest.testDeleteUserByName -- Time elapsed: 1.942 s <<< FAILURE!
+api.test.DataDrivenTest.testDeleteUserByName -- Time elapsed: 1.939 s <<< FAILURE!
 java.lang.RuntimeException: java.lang.NoSuchMethodError: 'org.apache.logging.log4j.LogBuilder org.apache.logging.log4j.Logger.atDebug()'
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:58)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:159)

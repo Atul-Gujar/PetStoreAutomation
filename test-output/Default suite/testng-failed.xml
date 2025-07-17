@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="api.test.DataDrivenTest">
+      <class name="api.general_practice_not_part_of_framework.Authentication_Tests">
         <methods>
-          <include name="testPostUser"/>
+          <include name="testOAuth2Authentication"/>
         </methods>
-      </class> <!-- api.test.DataDrivenTest -->
+      </class> <!-- api.general_practice_not_part_of_framework.Authentication_Tests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

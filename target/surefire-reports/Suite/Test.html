@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/6/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jul 16 14:51:06 IST 2025</td>
+<td>Started on:</td><td>Wed Jul 16 22:00:59 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>10 seconds (10069 ms)</td>
+<tr><td>Total time:</td><td>7 seconds (7982 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,12 +76,12 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='api.test.UserTests.testPostUser()'><b>testPostUser</b><br>Test class: api.test.UserTests</td>
+<td title='api.test.UserTests.testGetUserByName()'><b>testGetUserByName</b><br>Test class: api.test.UserTests</td>
 <td><div><pre>java.lang.AssertionError: expected [200] but found [500]
-	at api.test.UserTests.testPostUser(UserTests.java:45)
+	at api.test.UserTests.testGetUserByName(UserTests.java:54)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace417004859", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace417004859'><pre>java.lang.AssertionError: expected [200] but found [500]
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1186076210", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1186076210'><pre>java.lang.AssertionError: expected [200] but found [500]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -89,7 +89,7 @@ function toggleAllBoxes() {
 	at org.testng.Assert.assertEquals(Assert.java:1431)
 	at org.testng.Assert.assertEquals(Assert.java:1395)
 	at org.testng.Assert.assertEquals(Assert.java:1441)
-	at api.test.UserTests.testPostUser(UserTests.java:45)
+	at api.test.UserTests.testGetUserByName(UserTests.java:54)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -121,7 +121,7 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 </pre></div></td>
-<td>3</td>
+<td>1</td>
 <td>api.test.UserTests@1189dd52</td></tr>
 <tr>
 <td title='api.test.DataDrivenTest.testPostUser()'><b>testPostUser</b><br>Test class: api.test.DataDrivenTest</td>
@@ -141,8 +141,8 @@ Caused by: java.lang.NoSuchMethodError: &apos;org.apache.logging.log4j.LogBuilde
 	at api.utilities.XLUtility.getRowCount(XLUtility.java:32)
 	at api.utilities.DataProviders.getAllData(DataProviders.java:14)
 	... 29 more
-... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace256993264", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace256993264'><pre>java.lang.RuntimeException: java.lang.NoSuchMethodError: &apos;org.apache.logging.log4j.LogBuilder org.apache.logging.log4j.Logger.atDebug()&apos;
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace913711668", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace913711668'><pre>java.lang.RuntimeException: java.lang.NoSuchMethodError: &apos;org.apache.logging.log4j.LogBuilder org.apache.logging.log4j.Logger.atDebug()&apos;
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:58)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:159)
 	at org.testng.internal.Parameters.handleParameters(Parameters.java:809)
@@ -196,12 +196,132 @@ Caused by: java.lang.NoSuchMethodError: &apos;org.apache.logging.log4j.LogBuilde
 <td>0</td>
 <td>api.test.DataDrivenTest@36902638</td></tr>
 <tr>
+<td title='api.test.DataDrivenTest.testDeleteUserByName()'><b>testDeleteUserByName</b><br>Test class: api.test.DataDrivenTest</td>
+<td><div><pre>java.lang.RuntimeException: java.lang.NoSuchMethodError: &apos;org.apache.logging.log4j.LogBuilder org.apache.logging.log4j.Logger.atDebug()&apos;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: java.lang.NoSuchMethodError: &apos;org.apache.logging.log4j.LogBuilder org.apache.logging.log4j.Logger.atDebug()&apos;
+	at org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)
+	at org.apache.poi.openxml4j.opc.PackageRelationshipCollection.&lt;init&gt;(PackageRelationshipCollection.java:155)
+	at org.apache.poi.openxml4j.opc.PackageRelationshipCollection.&lt;init&gt;(PackageRelationshipCollection.java:125)
+	at org.apache.poi.openxml4j.opc.PackagePart.loadRelationships(PackagePart.java:565)
+	at org.apache.poi.openxml4j.opc.OPCPackage.getParts(OPCPackage.java:952)
+	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:523)
+	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:490)
+	at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:67)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:315)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:289)
+	at api.utilities.XLUtility.getRowCount(XLUtility.java:32)
+	at api.utilities.DataProviders.getUserNames(DataProviders.java:34)
+	... 29 more
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1160338685", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1160338685'><pre>java.lang.RuntimeException: java.lang.NoSuchMethodError: &apos;org.apache.logging.log4j.LogBuilder org.apache.logging.log4j.Logger.atDebug()&apos;
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:58)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:159)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:809)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:734)
+	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:949)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: java.lang.NoSuchMethodError: &apos;org.apache.logging.log4j.LogBuilder org.apache.logging.log4j.Logger.atDebug()&apos;
+	at org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)
+	at org.apache.poi.openxml4j.opc.PackageRelationshipCollection.&lt;init&gt;(PackageRelationshipCollection.java:155)
+	at org.apache.poi.openxml4j.opc.PackageRelationshipCollection.&lt;init&gt;(PackageRelationshipCollection.java:125)
+	at org.apache.poi.openxml4j.opc.PackagePart.loadRelationships(PackagePart.java:565)
+	at org.apache.poi.openxml4j.opc.OPCPackage.getParts(OPCPackage.java:952)
+	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:523)
+	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:490)
+	at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:67)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:315)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:289)
+	at api.utilities.XLUtility.getRowCount(XLUtility.java:32)
+	at api.utilities.DataProviders.getUserNames(DataProviders.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:54)
+	... 29 more
+</pre></div></td>
+<td>0</td>
+<td>api.test.DataDrivenTest@36902638</td></tr>
+<tr>
+<td title='api.test.UserTests.testDeleteUser()'><b>testDeleteUser</b><br>Test class: api.test.UserTests</td>
+<td><div><pre>java.lang.AssertionError: expected [204] but found [500]
+	at api.test.UserTests.testDeleteUser(UserTests.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1425445649", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1425445649'><pre>java.lang.AssertionError: expected [204] but found [500]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1431)
+	at org.testng.Assert.assertEquals(Assert.java:1395)
+	at org.testng.Assert.assertEquals(Assert.java:1441)
+	at api.test.UserTests.testDeleteUser(UserTests.java:80)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>1</td>
+<td>api.test.UserTests@1189dd52</td></tr>
+<tr>
 <td title='api.test.UserTests.testUpdateUser()'><b>testUpdateUser</b><br>Test class: api.test.UserTests</td>
 <td><div><pre>java.lang.AssertionError: expected [200] but found [500]
 	at api.test.UserTests.testUpdateUser(UserTests.java:68)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace368968205", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace368968205'><pre>java.lang.AssertionError: expected [200] but found [500]
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1212897825", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1212897825'><pre>java.lang.AssertionError: expected [200] but found [500]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -244,84 +364,12 @@ Caused by: java.lang.NoSuchMethodError: &apos;org.apache.logging.log4j.LogBuilde
 <td>1</td>
 <td>api.test.UserTests@1189dd52</td></tr>
 <tr>
-<td title='api.test.DataDrivenTest.testDeleteUserByName()'><b>testDeleteUserByName</b><br>Test class: api.test.DataDrivenTest</td>
-<td><div><pre>java.lang.RuntimeException: java.lang.NoSuchMethodError: &apos;org.apache.logging.log4j.LogBuilder org.apache.logging.log4j.Logger.atDebug()&apos;
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-Caused by: java.lang.NoSuchMethodError: &apos;org.apache.logging.log4j.LogBuilder org.apache.logging.log4j.Logger.atDebug()&apos;
-	at org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)
-	at org.apache.poi.openxml4j.opc.PackageRelationshipCollection.&lt;init&gt;(PackageRelationshipCollection.java:155)
-	at org.apache.poi.openxml4j.opc.PackageRelationshipCollection.&lt;init&gt;(PackageRelationshipCollection.java:125)
-	at org.apache.poi.openxml4j.opc.PackagePart.loadRelationships(PackagePart.java:565)
-	at org.apache.poi.openxml4j.opc.OPCPackage.getParts(OPCPackage.java:952)
-	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:523)
-	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:490)
-	at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:67)
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:315)
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:289)
-	at api.utilities.XLUtility.getRowCount(XLUtility.java:32)
-	at api.utilities.DataProviders.getUserNames(DataProviders.java:34)
-	... 29 more
-... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace636002577", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace636002577'><pre>java.lang.RuntimeException: java.lang.NoSuchMethodError: &apos;org.apache.logging.log4j.LogBuilder org.apache.logging.log4j.Logger.atDebug()&apos;
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:58)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:159)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:809)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:734)
-	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
-	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:949)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-Caused by: java.lang.NoSuchMethodError: &apos;org.apache.logging.log4j.LogBuilder org.apache.logging.log4j.Logger.atDebug()&apos;
-	at org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:307)
-	at org.apache.poi.openxml4j.opc.PackageRelationshipCollection.&lt;init&gt;(PackageRelationshipCollection.java:155)
-	at org.apache.poi.openxml4j.opc.PackageRelationshipCollection.&lt;init&gt;(PackageRelationshipCollection.java:125)
-	at org.apache.poi.openxml4j.opc.PackagePart.loadRelationships(PackagePart.java:565)
-	at org.apache.poi.openxml4j.opc.OPCPackage.getParts(OPCPackage.java:952)
-	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:523)
-	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:490)
-	at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:67)
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:315)
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:289)
-	at api.utilities.XLUtility.getRowCount(XLUtility.java:32)
-	at api.utilities.DataProviders.getUserNames(DataProviders.java:34)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:54)
-	... 29 more
-</pre></div></td>
-<td>0</td>
-<td>api.test.DataDrivenTest@36902638</td></tr>
-<tr>
-<td title='api.test.UserTests.testGetUserByName()'><b>testGetUserByName</b><br>Test class: api.test.UserTests</td>
+<td title='api.test.UserTests.testPostUser()'><b>testPostUser</b><br>Test class: api.test.UserTests</td>
 <td><div><pre>java.lang.AssertionError: expected [200] but found [500]
-	at api.test.UserTests.testGetUserByName(UserTests.java:54)
+	at api.test.UserTests.testPostUser(UserTests.java:45)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace600980888", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace600980888'><pre>java.lang.AssertionError: expected [200] but found [500]
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1600712390", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1600712390'><pre>java.lang.AssertionError: expected [200] but found [500]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -329,7 +377,7 @@ Caused by: java.lang.NoSuchMethodError: &apos;org.apache.logging.log4j.LogBuilde
 	at org.testng.Assert.assertEquals(Assert.java:1431)
 	at org.testng.Assert.assertEquals(Assert.java:1395)
 	at org.testng.Assert.assertEquals(Assert.java:1441)
-	at api.test.UserTests.testGetUserByName(UserTests.java:54)
+	at api.test.UserTests.testPostUser(UserTests.java:45)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -362,54 +410,6 @@ Caused by: java.lang.NoSuchMethodError: &apos;org.apache.logging.log4j.LogBuilde
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 </pre></div></td>
 <td>2</td>
-<td>api.test.UserTests@1189dd52</td></tr>
-<tr>
-<td title='api.test.UserTests.testDeleteUser()'><b>testDeleteUser</b><br>Test class: api.test.UserTests</td>
-<td><div><pre>java.lang.AssertionError: expected [204] but found [500]
-	at api.test.UserTests.testDeleteUser(UserTests.java:80)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace627091390", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace627091390'><pre>java.lang.AssertionError: expected [204] but found [500]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:1431)
-	at org.testng.Assert.assertEquals(Assert.java:1395)
-	at org.testng.Assert.assertEquals(Assert.java:1441)
-	at api.test.UserTests.testDeleteUser(UserTests.java:80)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</pre></div></td>
-<td>1</td>
 <td>api.test.UserTests@1189dd52</td></tr>
 </table><p>
 </body>

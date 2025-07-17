@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="6" passed="0" failed="6" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-16T14:51:06 IST" name="Suite" finished-at="2025-07-16T14:51:16 IST" duration-ms="10069">
+  <suite started-at="2025-07-16T22:00:59 IST" name="Suite" finished-at="2025-07-16T22:01:07 IST" duration-ms="7982">
     <groups>
     </groups>
-    <test started-at="2025-07-16T14:51:06 IST" name="Test" finished-at="2025-07-16T14:51:16 IST" duration-ms="10069">
+    <test started-at="2025-07-16T22:00:59 IST" name="Test" finished-at="2025-07-16T22:01:07 IST" duration-ms="7982">
       <class name="api.test.DataDrivenTest">
-        <test-method signature="testPostUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.test.DataDrivenTest@36902638]" started-at="2025-07-16T14:51:16 IST" name="testPostUser" data-provider="Data" finished-at="2025-07-16T14:51:16 IST" duration-ms="0" status="FAIL">
+        <test-method signature="testPostUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.test.DataDrivenTest@36902638]" started-at="2025-07-16T22:01:07 IST" name="testPostUser" data-provider="Data" finished-at="2025-07-16T22:01:07 IST" duration-ms="0" status="FAIL">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[java.lang.NoSuchMethodError: 'org.apache.logging.log4j.LogBuilder org.apache.logging.log4j.Logger.atDebug()']]>
@@ -69,7 +69,7 @@ at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedExce
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPostUser -->
-        <test-method signature="testDeleteUserByName(java.lang.String)[pri:2, instance:api.test.DataDrivenTest@36902638]" started-at="2025-07-16T14:51:16 IST" name="testDeleteUserByName" data-provider="UserNames" finished-at="2025-07-16T14:51:16 IST" duration-ms="0" status="FAIL">
+        <test-method signature="testDeleteUserByName(java.lang.String)[pri:2, instance:api.test.DataDrivenTest@36902638]" started-at="2025-07-16T22:01:07 IST" name="testDeleteUserByName" data-provider="UserNames" finished-at="2025-07-16T22:01:07 IST" duration-ms="0" status="FAIL">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[java.lang.NoSuchMethodError: 'org.apache.logging.log4j.LogBuilder org.apache.logging.log4j.Logger.atDebug()']]>
@@ -133,11 +133,11 @@ at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedExce
         </test-method> <!-- testDeleteUserByName -->
       </class> <!-- api.test.DataDrivenTest -->
       <class name="api.test.UserTests">
-        <test-method is-config="true" signature="createData()[pri:0, instance:api.test.UserTests@1189dd52]" started-at="2025-07-16T14:51:06 IST" name="createData" finished-at="2025-07-16T14:51:06 IST" duration-ms="581" status="PASS">
+        <test-method is-config="true" signature="createData()[pri:0, instance:api.test.UserTests@1189dd52]" started-at="2025-07-16T22:00:59 IST" name="createData" finished-at="2025-07-16T22:00:59 IST" duration-ms="125" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createData -->
-        <test-method signature="testPostUser()[pri:1, instance:api.test.UserTests@1189dd52]" started-at="2025-07-16T14:51:06 IST" name="testPostUser" finished-at="2025-07-16T14:51:10 IST" duration-ms="3411" status="FAIL">
+        <test-method signature="testPostUser()[pri:1, instance:api.test.UserTests@1189dd52]" started-at="2025-07-16T22:00:59 IST" name="testPostUser" finished-at="2025-07-16T22:01:02 IST" duration-ms="2657" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [200] but found [500]]]>
@@ -188,7 +188,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPostUser -->
-        <test-method signature="testGetUserByName()[pri:2, instance:api.test.UserTests@1189dd52]" started-at="2025-07-16T14:51:10 IST" name="testGetUserByName" finished-at="2025-07-16T14:51:12 IST" duration-ms="2273" status="FAIL">
+        <test-method signature="testGetUserByName()[pri:2, instance:api.test.UserTests@1189dd52]" started-at="2025-07-16T22:01:02 IST" name="testGetUserByName" finished-at="2025-07-16T22:01:04 IST" duration-ms="1516" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [200] but found [500]]]>
@@ -239,7 +239,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetUserByName -->
-        <test-method signature="testUpdateUser()[pri:3, instance:api.test.UserTests@1189dd52]" started-at="2025-07-16T14:51:12 IST" name="testUpdateUser" finished-at="2025-07-16T14:51:14 IST" duration-ms="1636" status="FAIL">
+        <test-method signature="testUpdateUser()[pri:3, instance:api.test.UserTests@1189dd52]" started-at="2025-07-16T22:01:04 IST" name="testUpdateUser" finished-at="2025-07-16T22:01:05 IST" duration-ms="1595" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [200] but found [500]]]>
@@ -290,7 +290,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpdateUser -->
-        <test-method signature="testDeleteUser()[pri:4, instance:api.test.UserTests@1189dd52]" started-at="2025-07-16T14:51:14 IST" name="testDeleteUser" finished-at="2025-07-16T14:51:16 IST" duration-ms="1728" status="FAIL">
+        <test-method signature="testDeleteUser()[pri:4, instance:api.test.UserTests@1189dd52]" started-at="2025-07-16T22:01:05 IST" name="testDeleteUser" finished-at="2025-07-16T22:01:07 IST" duration-ms="1633" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [204] but found [500]]]>
